@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Авто Практика - инструкции по ремонту, покупке и уходу за автомобилем</title>
+  <meta name="description" content="Практичные автомобильные инструкции: ремонт, обслуживание, покупка, оформление, страхование, уход и безопасное вождение.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Авто Практика">
+  <meta property="og:description" content="Понятные автомобильные гайды для водителей и владельцев авто.">
+  <meta property="og:locale" content="ru_RU">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Авто Практика",
+    "description": "Практичные автомобильные инструкции для водителей.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div class="reading-progress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./index.html" aria-label="Авто Практика">
+        <span class="brand-mark">A</span>
+        <span class="brand-text">Авто Практика</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="#deals">Сделки</a>
+        <a href="#law">Законы</a>
+        <a href="#service">Обслуживание</a>
+        <a href="#body">Кузов</a>
+        <a href="#categories">Все разделы</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-badge">Практичные авто-гайды без лишней теории</div>
+        <h1>Автомобильные инструкции для ремонта, покупки и спокойной эксплуатации</h1>
+        <p class="hero-text">Разбираем типовые поломки, документы, страховые случаи, уход за салоном, выбор запчастей и подготовку машины к дороге.</p>
+
+        <form class="hero-search" role="search" autocomplete="off">
+          <span class="search-icon" aria-hidden="true">⌕</span>
+          <input id="siteSearch" type="search" placeholder="Найти инструкцию: аккумулятор, ОСАГО, тормоза..." aria-label="Поиск по сайту">
+          <div class="search-dropdown" id="searchDropdown"></div>
+        </form>
+
+        <div class="tag-cloud" aria-label="Популярные темы">
+          <a href="#service">Диагностика</a>
+          <a href="#law">Штрафы</a>
+          <a href="#deals">Покупка авто</a>
+          <a href="#care">Детейлинг</a>
+          <a href="#electric">Электрика</a>
+          <a href="#wheels">Шины</a>
+        </div>
+
+        <div class="trust-strip">
+          <div class="trust-item"><strong>250+</strong><span>прикладных материалов</span></div>
+          <div class="trust-item"><strong>12</strong><span>авто-разделов</span></div>
+          <div class="trust-item"><strong>24/7</strong><span>доступ с телефона</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" data-reveal>
+      <a class="featured-card" href="#popular">
+        <div class="featured-content">
+          <span class="featured-label">Главная инструкция</span>
+          <h2>Как быстро понять, стоит ли ехать на сервис прямо сейчас</h2>
+          <p>Чек-лист по звукам, запахам, индикаторам панели и поведению машины, который помогает отделить срочную проблему от планового обслуживания.</p>
+          <span class="featured-link">Открыть материал</span>
+        </div>
+        <div class="featured-visual" aria-hidden="true">
+          <span>🔧</span>
+        </div>
+      </a>
+    </section>
+
+    <section class="section container" id="categories" data-reveal>
+      <div class="section-head">
+        <h2>Разделы сайта</h2>
+        <p>Карточки можно связать с отдельными HTML-страницами или категориями CMS.</p>
+      </div>
+
+      <div class="categories-grid">
+        <a class="category-card" id="deals" href="#">
+          <span>🤝</span><strong>Сделки с авто</strong><em>Покупка, продажа, проверка документов</em>
+        </a>
+        <a class="category-card" id="law" href="#">
+          <span>⚖</span><strong>Правила и законы</strong><em>Штрафы, ОСАГО, ДТП, регистрация</em>
+        </a>
+        <a class="category-card" id="service" href="#">
+          <span>🔧</span><strong>Мотор и сервис</strong><em>ТО, жидкости, диагностика, запуск</em>
+        </a>
+        <a class="category-card" id="body" href="#">
+          <span>🚘</span><strong>Кузовные работы</strong><em>ЛКП, коррозия, сколы, ремонт</em>
+        </a>
+        <a class="category-card" id="electric" href="#">
+          <span>⚡</span><strong>Автоэлектрика</strong><em>АКБ, свет, датчики, проводка</em>
+        </a>
+        <a class="category-card" id="wheels" href="#">
+          <span>🛞</span><strong>Подвеска и колеса</strong><em>Шины, тормоза, стуки, развал</em>
+        </a>
+        <a class="category-card" id="care" href="#">
+          <span>🧽</span><strong>Уход и чистка</strong><em>Салон, мойка, полировка, химия</em>
+        </a>
+        <a class="category-card" href="#">
+          <span>🎓</span><strong>Вождение</strong><em>Новички, экзамены, безопасные привычки</em>
+        </a>
+      </div>
+    </section>
+
+    <section class="section section-muted" data-reveal>
+      <div class="container">
+        <div class="section-head">
+          <h2>Новые материалы</h2>
+          <p>Горизонтальная подборка для свежих публикаций.</p>
+        </div>
+        <div class="recent-scroll" id="recentArticles"></div>
+      </div>
+    </section>
+
+    <section class="section container" id="popular" data-reveal>
+      <div class="section-head">
+        <h2>Популярные инструкции</h2>
+        <p>Блок заполняется из файла `articles-data.js`; можно заменить своими статьями.</p>
+      </div>
+      <div class="article-grid" id="popularArticles"></div>
+      <div class="center-actions">
+        <button class="btn-outline" type="button" id="refreshArticles">Обновить подборку</button>
+      </div>
+    </section>
+
+    <section class="section container" data-reveal>
+      <div class="team-panel">
+        <div class="section-head">
+          <h2>Эксперты проекта</h2>
+          <p>Блок доверия для информационного сайта: механик, автоюрист, диагност и специалист по уходу.</p>
+        </div>
+        <div class="team-grid">
+          <article class="team-card">
+            <div class="avatar">АМ</div>
+            <h3>Артем Мельников</h3>
+            <span>Технический редактор</span>
+            <p>Проверяет материалы по двигателям, трансмиссии и плановому обслуживанию.</p>
+          </article>
+          <article class="team-card">
+            <div class="avatar">НС</div>
+            <h3>Нина Соколова</h3>
+            <span>Автоюрист</span>
+            <p>Отвечает за темы ОСАГО, ДТП, договоров и регистрационных действий.</p>
+          </article>
+          <article class="team-card">
+            <div class="avatar">КР</div>
+            <h3>Кирилл Романов</h3>
+            <span>Диагност</span>
+            <p>Разбирает электрику, ошибки ЭБУ, аккумуляторы и проблемы запуска.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" data-reveal>
+      <div class="cta-banner">
+        <h2>Соберите авто-справочник на Vercel за один вечер</h2>
+        <p>Поменяйте название, категории, тексты статей и загрузите файлы в GitHub-репозиторий. Vercel опубликует сайт на поддомене `.vercel.app`.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">Авто Практика</div>
+        <p>Шаблон информационного сайта про автомобили, ремонт, покупку и эксплуатацию.</p>
+      </div>
+      <div>
+        <h4>Разделы</h4>
+        <a href="#deals">Сделки</a>
+        <a href="#law">Законы</a>
+        <a href="#service">Обслуживание</a>
+        <a href="#care">Уход</a>
+      </div>
+      <div>
+        <h4>Информация</h4>
+        <a href="#">О проекте</a>
+        <a href="#">Контакты</a>
+        <a href="#">Политика</a>
+        <a href="#">Карта сайта</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">© 2026 Авто Практика. Все права защищены.</div>
+  </footer>
+
+  <div class="cookie-popup" id="cookiePopup">
+    <span>Мы используем cookie для корректной работы сайта.</span>
+    <button type="button" id="cookieAccept">Принять</button>
+  </div>
+
+  <script src="./articles-data.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
